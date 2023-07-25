@@ -22,6 +22,7 @@ export const Flex = styled('div', {
 
 export const Button = styled('input', {
   padding: '.85rem',
+  fontSize: '.85rem',
 
   backgroundColor: '#F5F7F9',
   border: 0,
@@ -31,10 +32,10 @@ export const Button = styled('input', {
   transition: '.25s',
 
   '&:hover': {
-    backgroundColor: '#D6CFFF'
+    backgroundColor: '#DDDDDD'
   },
 
   '&:focus': {
-    backgroundColor: '#D6CFFF',
+    backgroundColor: '#DDDDDD',
   },
 })
