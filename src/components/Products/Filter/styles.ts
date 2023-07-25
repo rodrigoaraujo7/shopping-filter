@@ -39,21 +39,3 @@ export const Button = styled('input', {
     backgroundColor: '#DDDDDD',
   },
 })
-
-export const SocialMediaList = styled('ul', {
-  display: 'flex',
-  alignItems: 'center',
-  listStyle: 'none',
-  gap: '1rem',
-
-  borderTop: '2px solid #F5F7F9',
-  padding: '1rem 0 0'
-})
-
-export const SocialMediaItem = styled('a', {
-  cursor: 'pointer',
-})
-
-export const Icon = styled('img', {
-  width: '2.5rem',
-})
