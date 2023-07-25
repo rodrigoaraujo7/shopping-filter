@@ -2,7 +2,7 @@ import { styled } from '@stitches/react'
 
 export const Container = styled('div', {
   width: '20rem',
-  padding: '.85rem',
+  padding: '2rem',
 
   border: '2px solid #F5F7F9',
   borderRadius: '1rem'
@@ -17,7 +17,7 @@ export const Flex = styled('div', {
   flexWrap: 'wrap',
   gap: '.7rem',
 
-  marginTop: '2rem'
+  margin: '2rem 0'
 })
 
 export const Button = styled('input', {
@@ -38,4 +38,22 @@ export const Button = styled('input', {
   '&:focus': {
     backgroundColor: '#DDDDDD',
   },
+})
+
+export const SocialMediaList = styled('ul', {
+  display: 'flex',
+  alignItems: 'center',
+  listStyle: 'none',
+  gap: '1rem',
+
+  borderTop: '2px solid #F5F7F9',
+  padding: '1rem 0 0'
+})
+
+export const SocialMediaItem = styled('a', {
+  cursor: 'pointer',
+})
+
+export const Icon = styled('img', {
+  width: '2.5rem',
 })

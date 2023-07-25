@@ -7,8 +7,13 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box',
 
     margin: 0,
-    padding: '.75rem',
+    padding: 0,
+    outline: 'none',
 
     fontFamily: 'Poppins, sans-serif'
+  },
+
+  'body': {
+    padding: '2rem',
   }
 })
