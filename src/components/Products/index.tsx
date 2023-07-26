@@ -1,8 +1,14 @@
 import Filter from "./Filter";
+import Catalog from "./Catalog";
+
+import { Main } from "./styles";
 
 const Products = () => {
   return (
-    <Filter />
+    <Main>
+      <Filter />
+      <Catalog />
+    </Main>
   )
 }
 

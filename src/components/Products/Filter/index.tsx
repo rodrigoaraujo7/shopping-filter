@@ -3,7 +3,7 @@ import {
   Container,
   Title,
   Flex,
-  Button
+  FilterItem
 } from "./styles";
 
 import * as Tooltip from '@radix-ui/react-tooltip';
@@ -25,7 +25,7 @@ const Filter = () => {
       <Flex>
         {/* automatic alphabetic order */}
         {categorys.sort().map((category, index) => (
-          <Button type="button" value={category} key={index} />
+          <FilterItem type="button" value={category} key={index} />
         ))}
       </Flex>
 
