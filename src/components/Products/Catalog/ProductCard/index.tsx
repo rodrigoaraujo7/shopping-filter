@@ -1,4 +1,4 @@
-import { Container, Image, Description, Price } from './styles'
+import { Container, Image, Description, Price, Span } from './styles'
 
 interface IProductCard {
   name: string,
@@ -11,6 +11,7 @@ const ProductCard = ({ name, price, imageURL }: IProductCard) => {
     <Container>
       <Image src={imageURL} alt="tshirt" />
       <Description>{name} <Price>${price}</Price></Description>
+      <Span>jacket</Span>
     </Container>
   )
 }

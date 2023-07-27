@@ -1,9 +1,8 @@
 import { styled } from '@stitches/react'
 
 export const Container = styled('div', {
-  width: '20rem',
+  width: '100%',
   padding: '2rem',
-  position: 'fixed',
 
   backgroundColor: '#fff',
   border: '2px solid #F5F7F9',

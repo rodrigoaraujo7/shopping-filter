@@ -6,8 +6,6 @@ import {
   FilterItem
 } from "./styles";
 
-import * as Tooltip from '@radix-ui/react-tooltip';
-
 const Filter = () => {
   // filter categorys
   const categorys = [
@@ -20,7 +18,7 @@ const Filter = () => {
 
   return (
     <Container>
-      <Title>Category:</Title>
+      <Title>Categorys:</Title>
 
       <Flex>
         {/* automatic alphabetic order */}

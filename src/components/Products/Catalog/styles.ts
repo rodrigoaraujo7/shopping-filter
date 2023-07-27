@@ -2,9 +2,10 @@ import { styled } from '@stitches/react'
 
 export const CatalogContainer = styled('div', {
   display: 'flex',
+  justifyContent: 'center',
   flexWrap: 'wrap',
   gap: '2rem',
 
   width: '100%',
-  marginLeft: '22rem'
+  marginTop: '2rem'
 })
