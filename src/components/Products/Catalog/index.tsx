@@ -1,31 +1,19 @@
 import { useState, useEffect } from 'react'
 
-import ProductCard, { IProductCard } from "./ProductCard";
+// components
+import ProductCard from "./ProductCard";
 
+// styles
 import { CatalogContainer } from './styles'
 
-const Catalog = () => {
-  const data: IProductCard[] = [
-    {
-      name: 'Random Jacket',
-      price: 20,
-      imageURL: 'https://eadn-wc05-10739759.nxedge.io/wp-content/uploads/2023/03/tshirt-azul-2-sense.jpg',
-      productType: 'Jacket'
-    },
-    {
-      name: 'Random Pants',
-      price: 40,
-      imageURL: 'https://eadn-wc05-10739759.nxedge.io/wp-content/uploads/2023/03/tshirt-azul-2-sense.jpg',
-      productType: 'Pants'
-    },
-    {
-      name: 'Random Shoes',
-      price: 60,
-      imageURL: 'https://eadn-wc05-10739759.nxedge.io/wp-content/uploads/2023/03/tshirt-azul-2-sense.jpg',
-      productType: 'Shoes'
-    },
-  ]
+// types
+import { IProductCard } from '../../../types/product';
 
+// data
+import { productsData } from '../../../data';
+
+const Catalog = () => {
+  const data = productsData
   const [products, setProducts] = useState<IProductCard[]>([]);
 
   let productTypeFilter = 'Jacket';
