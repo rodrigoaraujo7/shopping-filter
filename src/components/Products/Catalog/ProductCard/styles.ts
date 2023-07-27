@@ -28,5 +28,6 @@ export const Span = styled('span', {
   padding: '0 1.25rem',
   margin: '1rem',
   background: '#F5F7F9',
-  borderRadius: 80
+  borderRadius: 80,
+  textTransform: 'lowercase'
 })

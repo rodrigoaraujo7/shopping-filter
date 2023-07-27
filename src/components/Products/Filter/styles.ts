@@ -15,6 +15,7 @@ export const Title = styled('h2', {
 
 export const Flex = styled('div', {
   display: 'flex',
+  alignItems: 'center',
   flexWrap: 'wrap',
   gap: '.7rem',
 
@@ -39,4 +40,8 @@ export const FilterItem = styled('input', {
   '&:focus': {
     backgroundColor: '#DDDDDD',
   },
+})
+
+export const ClearFilter = styled('span', {
+  cursor: 'pointer'
 })
