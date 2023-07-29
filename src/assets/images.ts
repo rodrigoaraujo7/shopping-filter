@@ -18,8 +18,8 @@ import hoodieClsBlack from './images/hoodie-cls-black.png'
 
 // pants
 import pantsFiletagemBlackJeans from './images/pants-filetagem-black-jeans.png'
-import pantsPaladinoGreen from './images/pants-paladino-green.png'
-import pantsPaladinoOffwhite from './images/pants-paladino-offwhite.png'
+import pantsPaladioGreen from './images/pants-paladio-green.png'
+import pantsPaladioOffwhite from './images/pants-paladio-offwhite.png'
 
 // t-shirts
 import tshirtClassInverso from './images/tshirt-class-inverso-black.png'
@@ -27,6 +27,7 @@ import tshirtClsGreen from './images/tshirt-cls-green.png'
 import tshirtPipaRed from './images/tshirt-pipa-red.png'
 
 export {
+  cap3PanelBeige,
   cap3PanelBlack,
   cap3PanelInversoBlack,
   capClassicPipaBlack,
@@ -39,8 +40,8 @@ export {
   hoodieClassInversoRed,
   hoodieClsBlack,
   pantsFiletagemBlackJeans,
-  pantsPaladinoGreen,
-  pantsPaladinoOffwhite,
+  pantsPaladioGreen,
+  pantsPaladioOffwhite,
   tshirtClassInverso,
   tshirtClsGreen,
   tshirtPipaRed,
