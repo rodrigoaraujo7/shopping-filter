@@ -19,7 +19,12 @@ type CatalogProps = {
 const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
   const data = productsData
 
-  const filteredData = data.filter(i => i.productType === filterCategory)
+  let filteredData
+  if (filterCategory === '') {
+    filteredData = data
+  } else {
+    filteredData = data.filter(i => i.productType === filterCategory)
+  }
 
   return (
     <CatalogContainer>

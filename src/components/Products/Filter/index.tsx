@@ -35,7 +35,7 @@ const Filter = ({ category, filteredCategorys }: FilterProps) => {
         ))}
 
         {/* clear filter */}
-        <ClearFilter onClick={() => filteredCategorys('Jackets')}>Clear</ClearFilter>
+        <ClearFilter onClick={() => filteredCategorys('')}>Clear</ClearFilter>
       </Flex>
 
       <Footer />

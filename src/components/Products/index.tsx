@@ -16,14 +16,10 @@ const Products = () => {
 
   const [filteredCategorys, setFilteredCategorys] = useState<string>('')
 
-  useEffect(() => {
-    console.log(filteredCategorys)
-  }, [filteredCategorys])
-
   return (
     <Main>
       <Filter category={categorys} filteredCategorys={setFilteredCategorys} />
-      <Catalog filterCategory={categorys[1]} />
+      <Catalog filterCategory={filteredCategorys} />
     </Main>
   )
 }
