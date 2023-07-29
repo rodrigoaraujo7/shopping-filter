@@ -5,8 +5,9 @@ const ProductCard = ({ name, price, imageURL, productType }: IProductCard) => {
   return (
     <Container>
       <Image src={imageURL} alt="tshirt" />
-      <Description>{name} <Price>${price}</Price></Description>
       <Span>{productType}</Span>
+      <Description>{name}</Description>
+      <Price>${price}</Price>
     </Container>
   )
 }
