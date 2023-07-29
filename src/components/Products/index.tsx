@@ -7,11 +7,11 @@ import { Main } from "./styles";
 
 const Products = () => {
   const categorys = [
-    'Tops',
-    'Jacket',
-    'Sweaters',
-    'Shoes',
-    'Pants'
+    'Hoodies',
+    'T-Shirts',
+    'Pants',
+    'Caps',
+    'Crewnecks'
   ]
 
   const [filteredCategorys, setFilteredCategorys] = useState<string>('')

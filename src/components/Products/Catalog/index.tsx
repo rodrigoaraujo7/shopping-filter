@@ -21,8 +21,10 @@ const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
 
   let filteredData
   if (filterCategory === '') {
+    // remove the filter
     filteredData = data
   } else {
+    // apply the filter using props
     filteredData = data.filter(i => i.productType === filterCategory)
   }
 
