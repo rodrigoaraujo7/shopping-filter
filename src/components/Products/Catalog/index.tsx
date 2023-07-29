@@ -12,21 +12,18 @@ import { IProductCard } from '../../../types/product';
 // data
 import { productsData } from '../../../data';
 
-const Catalog = () => {
-  const data = productsData
-  const [products, setProducts] = useState<IProductCard[]>([]);
+type CatalogProps = {
+  filterCategory: string
+}
 
-  let productTypeFilter = 'Jacket';
-  let count // counter of for loop
-  useEffect(() => { // need this hook to previne too many responses
-    for (count = 0; count < data.length; count++) {
-      setProducts(data.filter(product => product.productType === productTypeFilter))
-    }
-  }, [count])
+const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
+  const data = productsData
+
+  const filteredData = data.filter(i => i.productType === filterCategory)
 
   return (
     <CatalogContainer>
-      {products.map((product, index) => (
+      {filteredData.map((product, index) => (
         <ProductCard
           key={index}
           name={product.name}

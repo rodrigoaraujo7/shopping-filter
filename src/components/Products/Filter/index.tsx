@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { SetStateAction, Dispatch } from 'react';
 
 import Footer from "./Footer";
+
 import {
   Container,
   Title,
@@ -9,21 +10,14 @@ import {
   ClearFilter
 } from "./styles";
 
-const Filter = () => {
+type FilterProps = {
+  category: string[],
+  filteredCategorys: Dispatch<SetStateAction<string>>
+}
+
+const Filter = ({ category, filteredCategorys }: FilterProps) => {
   // filter categorys
-  const categorys = [
-    'Tops',
-    'Jackets',
-    'Sweaters',
-    'Shoes',
-    'Pants'
-  ]
-
-  const [filteredCategorys, setFilteredCategorys] = useState<string>('')
-
-  useEffect(() => {
-    console.log(filteredCategorys)
-  }, [filteredCategorys])
+  const categorys = category
 
   return (
     <Container>
@@ -36,12 +30,12 @@ const Filter = () => {
             type="button"
             value={category}
             key={index}
-            onClick={() => setFilteredCategorys(category)}
+            onClick={() => filteredCategorys(category)}
           />
         ))}
 
         {/* clear filter */}
-        <ClearFilter onClick={() => setFilteredCategorys('')}>Clear</ClearFilter>
+        <ClearFilter onClick={() => filteredCategorys('Jackets')}>Clear</ClearFilter>
       </Flex>
 
       <Footer />
