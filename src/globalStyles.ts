@@ -14,6 +14,6 @@ export const globalStyles = globalCss({
   },
 
   'body': {
-    padding: '2rem',
+    padding: '2rem 5rem',
   }
 })

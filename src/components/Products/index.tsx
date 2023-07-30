@@ -3,8 +3,6 @@ import { useState } from 'react';
 import Filter from "./Filter";
 import Catalog from "./Catalog";
 
-import { Main } from "./styles";
-
 const Products = () => {
   const categorys = [
     'Hoodies',
@@ -17,10 +15,10 @@ const Products = () => {
   const [filteredCategorys, setFilteredCategorys] = useState<string>('')
 
   return (
-    <Main>
+    <>
       <Filter category={categorys} filteredCategorys={setFilteredCategorys} />
       <Catalog filterCategory={filteredCategorys} />
-    </Main>
+    </>
   )
 }
 

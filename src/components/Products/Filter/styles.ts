@@ -2,11 +2,9 @@ import { styled } from '@stitches/react'
 
 export const Container = styled('div', {
   width: '100%',
-  padding: '2rem',
 
   backgroundColor: '#fff',
-  border: '2px solid #F5F7F9',
-  borderRadius: '1rem'
+  borderRadius: '1rem',
 })
 
 export const Title = styled('h2', {

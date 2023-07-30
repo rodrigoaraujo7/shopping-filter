@@ -1,7 +1,5 @@
 import { SetStateAction, Dispatch } from 'react';
 
-import Footer from "./Footer";
-
 import {
   Container,
   Title,
@@ -37,8 +35,6 @@ const Filter = ({ category, filteredCategorys }: FilterProps) => {
         {/* clear filter */}
         <ClearFilter onClick={() => filteredCategorys('')}>Clear</ClearFilter>
       </Flex>
-
-      <Footer />
     </Container >
   )
 }

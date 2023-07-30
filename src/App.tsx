@@ -1,12 +1,17 @@
-import React from 'react';
-import { globalStyles } from './globalStyles';
 import Products from './components/Products';
+import Footer from './components/Footer';
+
+import { globalStyles } from './globalStyles';
+import { Main } from "./styles";
 
 function App() {
   globalStyles()
 
   return (
-    <Products />
+    <Main>
+      <Products />
+      <Footer />
+    </Main>
   );
 }
 
