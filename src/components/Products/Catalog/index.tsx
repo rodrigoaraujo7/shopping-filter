@@ -11,6 +11,26 @@ type CatalogProps = {
   filterCategory: string
 }
 
+const list = {
+  visible: {
+    transition: {
+      staggerChildren: .15,
+      staggerDirection: 1,
+      duration: .85,
+      delay: 1
+    },
+  },
+}
+
+const itemList = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  }
+}
+
 const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
   const data = productsData
 
@@ -27,7 +47,7 @@ const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
   console.table(filteredData.length)
 
   return (
-    <CatalogContainer>
+    <CatalogContainer variants={list} initial="hidden" animate="visible">
       {filteredData.length !== 0 ? (
         filteredData.map((product, index) => (
           <ProductCard
@@ -36,6 +56,7 @@ const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
             price={product.price}
             imageURL={product.imageURL}
             productType={product.productType}
+            variants={itemList}
           />
         ))
       ) : (

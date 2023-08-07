@@ -1,6 +1,8 @@
 import { styled } from '@stitches/react'
 
-export const CatalogContainer = styled('div', {
+import { motion } from 'framer-motion'
+
+export const CatalogContainer = styled(motion.div, {
   display: 'flex',
   justifyContent: 'center',
   flexWrap: 'wrap',
