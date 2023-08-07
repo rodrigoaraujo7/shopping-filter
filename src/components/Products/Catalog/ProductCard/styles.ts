@@ -25,5 +25,5 @@ export const Span = styled(motion.span, {
   padding: '0 1.25rem',
   background: '#F5F7F9',
   borderRadius: 80,
-  textTransform: 'lowercase',
+  textTransform: 'lowercase'
 })

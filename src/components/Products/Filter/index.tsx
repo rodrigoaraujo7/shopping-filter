@@ -13,6 +13,24 @@ type FilterProps = {
   filteredCategorys: Dispatch<SetStateAction<string>>
 }
 
+const list = {
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+      staggerDirection: 1,
+    },
+  },
+}
+
+const itemList = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  }
+}
+
 const Filter = ({ category, filteredCategorys }: FilterProps) => {
   // filter categorys
   const categorys = category
@@ -21,7 +39,7 @@ const Filter = ({ category, filteredCategorys }: FilterProps) => {
     <Container>
       <Title>Categorys:</Title>
 
-      <Flex>
+      <Flex variants={list} initial="hidden" animate="visible">
         {/* automatic alphabetic order */}
         {categorys.sort().map((category, index) => (
           <FilterItem
@@ -29,11 +47,12 @@ const Filter = ({ category, filteredCategorys }: FilterProps) => {
             value={category}
             key={index}
             onClick={() => filteredCategorys(category)}
+            variants={itemList}
           />
         ))}
 
         {/* clear filter */}
-        <ClearFilter onClick={() => filteredCategorys('')}>Clear</ClearFilter>
+        <ClearFilter onClick={() => filteredCategorys('')} variants={itemList}>Clear</ClearFilter>
       </Flex>
     </Container >
   )
