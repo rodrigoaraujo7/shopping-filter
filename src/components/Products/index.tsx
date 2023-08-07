@@ -9,7 +9,8 @@ const Products = () => {
     'T-Shirts',
     'Pants',
     'Caps',
-    'Crewnecks'
+    'Crewnecks',
+    'Shoes'
   ]
 
   const [filteredCategorys, setFilteredCategorys] = useState<string>('')

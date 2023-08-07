@@ -23,17 +23,24 @@ const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
     filteredData = data.filter(i => i.productType === filterCategory)
   }
 
+  // console.table(filteredData)
+  console.table(filteredData.length)
+
   return (
     <CatalogContainer>
-      {filteredData.map((product, index) => (
-        <ProductCard
-          key={index}
-          name={product.name}
-          price={product.price}
-          imageURL={product.imageURL}
-          productType={product.productType}
-        />
-      ))}
+      {filteredData.length !== 0 ? (
+        filteredData.map((product, index) => (
+          <ProductCard
+            key={index}
+            name={product.name}
+            price={product.price}
+            imageURL={product.imageURL}
+            productType={product.productType}
+          />
+        ))
+      ) : (
+        <h1>No products to display!</h1>
+      )}
     </CatalogContainer>
   )
 }
