@@ -13,7 +13,7 @@
 </p>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjY5YWdkM2RkcmtyY3ExcHRxN2g1czF2dXBrYWU2ZDkyOGNuczVzYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kuaZr4BjrRtsQaXdLk/giphy.gif" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9pYjdxZHlzZDllcGpwdTc4ZGlmMXZmY3dkaWxmdDZjb3dlcGdqaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SDdJi1S73M6InmTBmw/giphy.gif" />
 </div>
 
 ## Participants
@@ -29,6 +29,7 @@
 - [x] Typescript
 - [x] Stitches
 - [x] Radix
+- [x] Framer Motion
 
 ## How to download the project:
 
