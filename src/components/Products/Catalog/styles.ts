@@ -3,7 +3,6 @@ import { styled } from '@stitches/react'
 export const CatalogContainer = styled('div', {
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center',
   flexWrap: 'wrap',
   gap: '2rem',
 

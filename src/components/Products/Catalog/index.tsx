@@ -39,7 +39,13 @@ const Catalog: React.FC<CatalogProps> = ({ filterCategory }) => {
           />
         ))
       ) : (
-        <h1>No products to display!</h1>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <h1>No products to display!</h1>
+        </div>
       )}
     </CatalogContainer>
   )
