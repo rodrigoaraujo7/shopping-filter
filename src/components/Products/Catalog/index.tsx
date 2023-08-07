@@ -1,13 +1,8 @@
-import { useState, useEffect } from 'react'
-
 // components
 import ProductCard from "./ProductCard";
 
 // styles
 import { CatalogContainer } from './styles'
-
-// types
-import { IProductCard } from '../../../types/product';
 
 // data
 import { productsData } from '../../../data';
